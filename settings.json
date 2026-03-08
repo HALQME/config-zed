@@ -3,6 +3,9 @@
   // CORE EDITOR SETTINGS
   // ============================================================================
   // Workspace & Session Management
+  "language_models": {
+    "openai_compatible": {}
+  },
   "vim_mode": true,
   "buffer_font_size": 14.0,
   "redact_private_values": true,
@@ -582,8 +585,8 @@
       "model": "gpt-5-mini"
     },
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "provider": "Kilo Gateway",
+      "model": "z-ai/glm-5:free"
     },
     "commit_message_model": {
       "provider": "copilot_chat",
@@ -594,19 +597,23 @@
     "model_parameters": []
   },
   "agent_servers": {
-    "cursor": {
-      "type": "registry"
-    },
     "kilo": {
+      "default_mode": "orchestrator",
       "favorite_models": [
-        "kilo/openrouter/free"
+        "kilo/openrouter/free",
+        "kilo/kilo-auto/free",
+        "kilo/minimax/minimax-m2.5:free"
       ],
+      "default_model": "kilo/kilo-auto/free",
       "type": "registry"
     },
     "opencode": {
+      "default_model": "opencode/minimax-m2.5-free",
       "type": "registry",
     },
     "kiro cli": {
+      "default_mode": "kiro_planner",
+      "default_model": "minimax-m2.1",
       "type": "custom",
       "command": "kiro-cli",
       "args": [
