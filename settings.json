@@ -597,6 +597,11 @@
     "model_parameters": []
   },
   "agent_servers": {
+    "claude": null,
+    "codex": null,
+    "gemini": {
+      "command": "gemini"
+    },
     "kilo": {
       "default_mode": "orchestrator",
       "favorite_models": [
